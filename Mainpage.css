@@ -1,0 +1,465 @@
+@import url("http://fonts.cdnfonts.com/css/eurostile-extended");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 45px;
+  align-items: center;
+  z-index: 99999;
+  transition: all 0.5s ease-in-out;
+}
+
+ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  gap: 14px;
+  /* padding: 0 37px; */
+  flex-direction: column;
+}
+
+li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-family: "Apex Mk3", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.logo {
+  position: relative;
+  height: 70px;
+}
+
+.cart-icon {
+  height: 40px;
+  width: 43px;
+}
+.call {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.login {
+  color: white;
+  font-weight: lighter;
+  font-family: "Apex Mk3";
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+#login-link {
+  text-decoration: none;
+}
+header.sticky {
+  background-color: black;
+}
+
+#cart-digit {
+  color: white;
+  position: absolute;
+  right: 43px;
+  top: 43px;
+}
+
+.btn {
+  padding: 13px 36px;
+  position: relative;
+  z-index: 10000;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+li a {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.country {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  margin-top: 35rem;
+  word-spacing: 6px;
+  letter-spacing: 1px;
+  font-family: "serif";
+  font-weight: lighter;
+  font-size: 0.6rem;
+}
+
+.copy-right {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  margin-top: 39rem;
+  font-family: "serif";
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+}
+
+.grab-it {
+  text-align: center;
+  font-family: "Apex Mk3", sans-serif;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding-top: 1.7rem;
+}
+
+.img-wraper {
+  height: 350px;
+  width: 370px;
+  /* text-align: center; */
+  background-image: url(images/img.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.product-collection {
+  background-color: black;
+  height: 40rem;
+}
+
+.collection {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 9.1rem 30px;
+  gap: 1.4rem;
+}
+
+.pro-50 {
+  position: absolute;
+  margin: 9rem 3.5rem;
+  font-family: "Apex Mk3", sans-serif;
+  font-weight: lighter;
+  font-size: 1.56rem;
+  color: white;
+}
+
+.pro-btn {
+  padding: 10px 10px;
+  font-family: "Apex Mk3", sans-serif;
+  font-weight: lighter;
+  padding: 10px 2.45rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  margin-left: 3.5rem;
+  margin-top: 11.66rem;
+  transition: 0.5s all ease-in-out;
+}
+
+.pro-btn:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
+.flex-pro-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3.4rem;
+  flex-wrap: wrap;
+}
+
+.all-prnt {
+  margin-top: 1rem;
+}
+.u-r-pro-heading {
+  text-align: center;
+  font-family: "Apex Mk3", sans-serif;
+  font-weight: lighter;
+  font-size: 2.7rem;
+  margin-top: 4.5rem;
+}
+.hoodies-2project {
+  text-align: center;
+  font-family: "Apex MK3", sans-serif;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  margin-top: 0.9rem;
+}
+
+.img-container {
+  height: 530px;
+  width: 545px;
+  background-image: url(images/img-2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 6px;
+}
+
+.btn-shop-now-last {
+  font-family: "Apex Mk3", sans-serif;
+  font-weight: lighter;
+  padding: 10px 2.45rem;
+  font-size: 1.6rem;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  transition: 0.5s all ease-in-out;
+  display: block;
+  margin: 2rem auto;
+}
+.btn-shop-now-last:hover {
+  background-color: black;
+  color: white;
+}
+.flex {
+  /* justify-content: center; */
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.lg\:w-1\/6 {
+  text-align: left;
+}
+
+.footer {
+  margin-top: 7rem;
+  background-color: black;
+}
+.bold {
+  font-family: "Apex Mk3", sans-serif;
+  letter-spacing: 1px;
+  padding: 2.5px 0;
+}
+
+ /* @media (max-width: 768px){
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+}  */
+
+/* only media queries fired here=// */
+/* only media queries fired here=// */
+@media (max-width: 800px) {
+  .logo {
+    height: 50px;
+    padding-left: 25px;
+  }
+  #mainlink {
+    display: none;
+  }
+
+  header {
+    padding: 25px 15px;
+  }
+  ul {
+    top: -9px;
+    /* padding-left: 10px; */
+  }
+
+  .login {
+    display: none;
+  }
+
+  .cart-icon {
+    height: 40px;
+    width: 43px;
+  }
+  #cart-digit {
+    right: 13px;
+    top: 22.1px;
+  }
+  .call {
+    margin-bottom: 10px;
+  }
+  .explore {
+    display: none;
+  }
+  .product-collection {
+    height: 78rem;
+  }
+  .collection {
+    padding: 4rem 0;
+  }
+  .u-r-pro-heading {
+    font-size: 1.8rem;
+  }
+  .img-container {
+    height: 353px;
+    width: 350px;
+    margin: 0 10px;
+  }
+  .flex-pro-img-container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 500px) {
+  .u-r-pro-heading {
+    font-size: 2.7rem;
+    font-size: 1.4rem;
+  }
+  .flex-pro-img-container {
+    flex-wrap: nowrap;
+    margin: 20px 10px;
+    gap: 0;
+  }
+}
+
+@media (max-width: 1089px) and (min-width: 769px) {
+  .flex-pro-img-container {
+    flex-wrap: nowrap;
+    margin: 65px 10px;
+    gap: 0;
+  }
+  .img-container {
+    height: 500px;
+    width: 480px;
+    margin: 0 15px;
+  }
+  .btn-shop-now-last {
+    margin: -1rem auto;
+  }
+}
+
+@media (max-width: 1225px) and (min-width: 1188px) {
+  .collection {
+    gap: 1.4rem;
+  }
+  .btn-shop-now-last {
+    margin: -1rem auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    height: 40px;
+  }
+
+  ul {
+    padding-left: 6px;
+  }
+  .pro-50 {
+    font-size: 1.22rem;
+  }
+  .pro-btn {
+    padding: 8px 2.3rem;
+    margin-top: 11.3rem;
+    font-size: 1.22rem;
+  }
+  .all-prnt {
+    margin-top: 5rem;
+  }
+  .img-wraper {
+    width: 300px;
+  }
+  .img-container {
+    height: 300px;
+    margin-top: 1.5rem;
+  }
+  .u-r-pro-heading {
+    font-size: 1.9rem;
+    margin-top: 1rem;
+  }
+}
+
+/* for hover link not for mobile */
+@media (min-width: 800px) {
+  .login {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+
+  .login:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .login:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+@media (max-width: 1187px) and (min-width: 801px) {
+  .collection {
+    flex-wrap: nowrap;
+    padding: 9.1rem 30px;
+  }
+  .pro-50 {
+    font-size: 1.26rem;
+    margin: 9.5rem 3.5rem;
+  }
+  .pro-btn {
+    padding: 6px 2.45rem;
+    font-size: 1.3rem;
+  }
+}

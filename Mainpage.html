@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HIDDEN HILLS </title>
+    <link href="http://fonts.cdnfonts.com/css/apex-mk3" rel="stylesheet">
+    <link rel="stylesheet" href="Mainpage.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+
+
+    <header>
+        <ul>
+            <!-- <li> <a href="#">Hidden Hills</a> </li> -->
+            <li> <a href="#"> <span class="explore">Explore</span> Shop</a> </li>
+            <li id="mainlink"> <a href="#">Project 50</a> </li>
+            <li id="mainlink"> <a href="#">Collection</a> </li>
+        </ul>
+        <a href="#Logolinkhome"> <img src="Hidden Hills Logo.png" alt="logo" class="logo"></a>
+        <div class="call">
+            <a id="login-link" href="#loginlink">
+                <h2 class="login">Login</h2>
+            </a>
+            <a href="#cartlink"> <img src="cart.png" alt="add to cart" class="cart-icon"><span
+                    id="cart-digit">0</span></a>
+        </div>
+
+    </header>
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="car bg.mp4" type="video/mp4">
+        </video>
+
+        <button id="clickMe" class="btn">Enter</button>
+        <!-- <p class="country">[PARIS] [INDIA] [BERLIN]</p> -->
+        <!-- <p class="copy-right"> ©copyright 2022 All rights reserved </p> -->
+
+    </div>
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <div class="product-collection">
+        <div class="collection">
+            <div class="img-wraper">
+                <h4 class="pro-50">Project 50</h4>
+                <button class="pro-btn">SHOP NOW</button>
+            </div>
+
+
+            <div class="img-wraper">
+                <h4 class="pro-50">hidden hills collection</h4>
+                <button class="pro-btn">SHOP NOW</button>
+            </div>
+
+
+            <div class="img-wraper">
+                <h4 class="pro-50">Essential Collection</h4>
+                <button class="pro-btn">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- you are the projetc=// -->
+    <!-- you are the projetc=// -->
+    <div class="all-prnt">
+        <h3 class="u-r-pro-heading"> You are the project</h3>
+        <h3 class="hoodies-2project">4 Hoodies // 2 Project50 Tees.</h3>
+        <div class="flex-pro-img-container">
+            <div class="img-container"></div>
+            <div class="img-container"></div>
+        </div>
+    </div>
+    <button class="btn-shop-now-last">Shop Now</button>
+
+    <footer class="footer">
+        <div class="flex flex-wrap md:text-left text-center ">
+
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                <h2 class="bold">Help</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a href="#faq" class="">Faq's</a>
+                    </li>
+                    <li>
+                        <a href="#sizing" href="#">Sizing</a>
+                    </li>
+                    <li>
+                        <a href="#return">Return</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                <h2 class="bold">About</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a href="#shipping">Shipping</a>
+                    </li>
+                    <li>
+                        <a href="#imprint">Imprint</a>
+                    </li>
+                    <li>
+                        <a href="#datasecurity">Data Security</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                <h2 class="bold">Social</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a href="#instagram">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#twitter">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+</body>
+<!-- <script src="m.js"></script> -->
+
+</html>
